@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 1) form-ები გამოიყენება მომხმარებლისგან მონაცემების მისაგებად. მაგ.: რეგისტრაცია, ავტორიზაცია და ა.შ.-->
+
+    <!-- 2) თეგების აღწერა:<form> - ქმნის ფორმას სადაც იწერება ყველა input ველი. 
+        <input> - ველი სადაც მომხმარებელი შეყავს მონაცემები.
+ატრიბუტები:type მონაცემის ტიპი (text, email, password, radio და ა.შ.)name ველის სახელი (სერვერზე იგზავნება ამ სახელით)
+<label> - ტექსტი რომელიც აღწერს input-ს.
+
+    <!-- 3) -->
+
+    <label for="fullname">სრული სახელი:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="შეიყვანეთ სახელი" required><br><br>
+
+    <label for="email">ელ.ფოსტა:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+    <label for="password">პაროლი:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <p>სქესი:</p>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">მამრობითი</label><br><br>
+    
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">მდედრობითი</label><br><br>
+
+    <label for="birthdate">დაბადების თარიღი:</label><br>
+    <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+    <label for="color">საყვარელი ფერი:</label><br>
+    <input type="color" id="color" name="color"><br><br>
+
+    <button type="submit">გაგზავნა</button>
+
+</body>
+</html>

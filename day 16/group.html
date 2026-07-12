@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows, Linux & macOS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #2b2b2b;
+      color: #696969;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1.5rem 2.5rem;
+      background: #000000;
+      border-bottom: 1px solid #e5e5e5;
+    } 
+
+    header h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.6rem; }
+    header p  { color: #666; max-width: 500px; margin: 0 auto; font-size: 1rem; line-height: 1.7; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      padding: 2rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #363636;
+      border: 1px solid #e5e5e5;
+      border-top: 4px solid;
+      border-radius: 14px;
+      padding: 1.5rem;
+    }
+
+    .card.win { border-top-color: #0078D4; }
+    .card.lin { border-top-color: #E95420; }
+    .card.mac { border-top-color: #999; }
+
+    .os-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .win .os-label { color: #0078D4; }
+    .lin .os-label { color: #E95420; }
+    .mac .os-label { color: #777; }
+
+    .card h2 { font-size: 1.35rem; font-weight: 600; margin-bottom: 0.9rem; }
+
+    .card p {
+      font-size: 0.92rem;
+      color: #e1e1e1;
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.25rem; }
+
+    .tag {
+      font-size: 0.76rem;
+      padding: 4px 10px;
+      border-radius: 99px;
+      background: #373737;
+      color: #fffdfd;
+      border: 1px solid #6c6c6c;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Windows, Linux & macOS</h1>
+  <p>Three operating systems, each built for a different kind of user. Here is a simple breakdown of what each one is and who it is for.</p>
+</header>
+<section class="cards">
+
+  <div class="card win">
+    <div class="os-label">Microsoft · 1985</div>
+    <h2>Windows</h2>
+    <p>Windows is the most popular operating system in the world. It runs on almost any PC and is designed for everyday use — browsing, office work, gaming, and more. Most laptops and desktops come with it pre-installed.</p>
+    <p>It has a familiar Start menu and taskbar, supports a huge library of software and games, and most accessories like printers and mice just work straight away without any setup.</p>
+    <div class="tags">
+      <span class="tag">Best for gaming</span>
+      <span class="tag">Most software</span>
+      <span class="tag">Any PC hardware</span>
+      <span class="tag">Paid (~$139)</span>
+    </div>
+  </div>
+
+  <div class="card lin">
+    <div class="os-label">Open Source · 1991</div>
+    <h2>Linux</h2>
+    <p>Linux is a free, open-source operating system that anyone can use, change, or share. It comes in many versions called distributions — such as Ubuntu, Fedora, and Arch — each suited to different needs and skill levels.</p>
+    <p>It is the top choice for developers, programmers, and servers worldwide. It is very stable, fast, and secure, and can even run well on older hardware. The main downside is it takes more time to learn than Windows or macOS.</p>
+    <div class="tags">
+      <span class="tag">Completely free</span>
+      <span class="tag">For developers</span>
+      <span class="tag">Any hardware</span>
+      <span class="tag">Open source</span>
+    </div>
+  </div>
+
+  <div class="card mac">
+    <div class="os-label">Apple · 2001</div>
+    <h2>macOS</h2>
+    <p>macOS is Apple's operating system, made exclusively for Mac computers. It is known for its clean, polished design, smooth performance, and tight integration with iPhone, iPad, and other Apple devices.</p>
+    <p>It is a favourite among designers, video editors, and creative professionals. It is also built on Unix, which makes it popular with developers. The only limitation is that you must own an Apple Mac to use it.</p>
+    <div class="tags">
+      <span class="tag">Best design tools</span>
+      <span class="tag">Apple ecosystem</span>
+      <span class="tag">Mac only</span>
+      <span class="tag">Free (with Mac)</span>
+    </div>
+  </div>
+</section>
+</body>
+</html>

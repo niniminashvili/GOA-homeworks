@@ -1,0 +1,6 @@
+print("hello")
+len("python")
+int("25")
+float("2.5")
+str(123)
+range(5)

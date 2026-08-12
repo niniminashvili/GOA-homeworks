@@ -1,0 +1,1 @@
+print("mindreader"[4:8])
